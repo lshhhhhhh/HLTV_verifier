@@ -5,7 +5,8 @@ Within the CS2 community, a persistent conspiracy theory alleges that HLTV artif
 ### 📌 TL;DR (Executive Summary)
 1. **ZywOo is Clean**: His data withstood the most rigorous auditing tests. There is zero evidence of manual score fabrication or tampering.
 2. **No Evidence of Clumsy Manual Tampering**: Within the dimensions tested, the ratings display highly automated, algorithmic characteristics. This rules out the most common suspicions of "manual score fabrication" or "hardcoded algorithmic safety nets."
-3. **Why do the ratings feel "fake"?**: Because when players like NiKo, donk, or Jame put up extremely skewed, anomalous raw stats, the weighting and rounding mechanics within HLTV's formula frequently cause their final ratings to round to a `.x5`. This **algorithmic truncation bias** is a machine artifact, mistakenly perceived as "manual manipulation."
+3. **Why do people think ZywOo's rating is "fake" (High ADR/K-D but low Rating)?**: The community often points out that ZywOo's raw stats are incredible, but his final Rating seems disproportionately low, sparking "nerf" theories. Our tests prove the formula is applied uniformly without human bias. The real reason is that Rating 3.0 places a much heavier systemic weight on Impact (e.g., opening kills, multi-kills) while likely capping the scaling of pure K-D ratios (especially if padded by saving).
+4. **The Unexpected Discovery (Algorithmic Truncation)**: While auditing, we discovered that when players like NiKo, donk, or Jame put up extremely skewed raw stats, the formula's weighting mechanics frequently cause their final ratings to mathematically round to a `.x5`. This quirky machine artifact is the ultimate proof that an algorithm is doing the math, not a human.
 
 ---
 
