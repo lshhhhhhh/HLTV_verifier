@@ -1,6 +1,6 @@
 # HLTV Rating 3.0 Forensic Investigation: Is HLTV Secretly "Boosting" Player Ratings?
 
-Within the CS2 community, a persistent conspiracy theory alleges that HLTV artificially manipulates (or "boosts") the post-match ratings of certain star players, particularly ZywOo, to maintain their narrative dominance. To put an end to this debate, we conducted a massive, forensic-level statistical audit covering **8,082 top-tier matches** from 20 of the best players in the world under the Rating 3.0 system.
+Within the CS2 community, a persistent conspiracy theory alleges that HLTV artificially manipulates the post-match ratings of certain star players—specifically, there's a widespread belief that ZywOo's ratings are intentionally **nerfed** (suppressed) behind the scenes to balance the data or push other narratives. To put an end to this debate, we conducted a massive, forensic-level statistical audit covering **8,082 top-tier matches** from 20 of the best players in the world under the Rating 3.0 system.
 
 ### 📌 TL;DR (Executive Summary)
 1. **ZywOo is Clean**: His data withstood the most rigorous auditing tests. There is zero evidence of manual score fabrication or tampering.
@@ -27,11 +27,11 @@ Think about it logically: if a rogue HLTV data entry clerk was manually faking s
 
 ---
 
-## 📉 Test 2: KDE "Cliff" Detection (Catching Systemic Boosting)
+## 📉 Test 2: KDE "Cliff" Detection (Busting the Betting Conspiracy)
 
 **The Methodology**:
-If HLTV isn't manually faking trailing numbers, could they have hardcoded a "floor" into the system? For instance, if ZywOo scores a 0.98, does the system automatically push it up to a 1.05 so he doesn't look bad?
-To detect this level of deep tampering, we plotted the Kernel Density Estimation (KDE) distribution curves for all 8,000+ matches. If an artificial "floor" existed, the curve would exhibit a physically impossible **"cliff drop"** at 0.99, immediately followed by an unnatural **"artificial mountain"** at 1.05.
+A popular sub-conspiracy in the community revolves around illicit betting markets—specifically, the theory that ratings are artificially rigged to hit the "over/under" on betting lines (e.g., manipulating a rating to be strictly under 1.50 to ruin bettors). 
+To detect this level of targeted tampering, we plotted the Kernel Density Estimation (KDE) distribution curves for all 8,000+ matches. If ratings were being artificially pushed away from popular betting thresholds, the curve would exhibit a physically impossible **"cliff drop"** right around those betting lines (like 1.50 or 0.90), immediately followed by an unnatural **"artificial mountain"** where the scores were relocated.
 
 **The Results**:
 We closely analyzed the KDE curves of the 5 most debated players (ZywOo, NiKo, donk, m0NESY, Jame).
@@ -53,6 +53,6 @@ Below is the KDE and histogram analysis for all 20 players in our dataset. None 
 
 This rigorous two-step statistical audit eliminates the two most common cheating methods:
 1. **The Last Digit Test** disproves clumsy, manual score fabrication.
-2. **KDE Cliff Detection** disproves algorithmic hard-floors or targeted score-boosting.
+2. **KDE Cliff Detection** disproves targeted score manipulation for betting lines or artificial thresholds.
 
 The conclusion is definitive: HLTV's Rating 3.0 is a cold, emotionless calculator. Regardless of whose name you input, it evaluates the raw data using the exact same formula. While the mathematical design of the formula itself may not be perfect (as it struggles to absorb the truncation errors caused by extreme playstyles without rounding artifacts), it is **absolutely fair and lacks any secret "boosting" mechanisms targeted at specific players.**
