@@ -4,7 +4,7 @@ Within the CS2 community, a persistent conspiracy theory alleges that HLTV artif
 
 ### 📌 TL;DR (Executive Summary)
 1. **ZywOo is Clean**: His data withstood the most rigorous auditing tests. There is zero evidence of manual score fabrication or tampering.
-2. **HLTV Does Not Manually Alter Ratings**: All player ratings are the product of a cold, unfeeling "black-box" mathematical formula without any human intervention.
+2. **No Evidence of Clumsy Manual Tampering**: Within the dimensions tested, the ratings display highly automated, algorithmic characteristics. This rules out the most common suspicions of "manual score fabrication" or "hardcoded algorithmic safety nets."
 3. **Why do the ratings feel "fake"?**: Because when players like NiKo, donk, or Jame put up extremely skewed, anomalous raw stats, the weighting and rounding mechanics within HLTV's formula frequently cause their final ratings to round to a `.x5`. This **algorithmic truncation bias** is a machine artifact, mistakenly perceived as "manual manipulation."
 
 ---
