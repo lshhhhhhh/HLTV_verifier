@@ -18,6 +18,8 @@ This technique is widely used by auditors to detect financial fraud (e.g., the E
 *   **17 out of 20 players passed perfectly**: The trailing digits of 17 players, including ZywOo, m0NESY, and ropz, were perfectly distributed, strictly obeying the laws of probability.
 *   **3 players triggered massive anomalies**: NiKo, Jame, and donk generated severe statistical red flags.
 
+![Last Digit Heatmap](output/digit_heatmap_table.png)
+
 **Anomaly Breakdown**: Does this mean HLTV is tampering with these three players?
 Actually, the exact opposite is true. Diving into the data, we discovered their anomaly is entirely driven by an **absurdly high frequency of ratings ending in the digit "5"** (e.g., Jame had 17% of his matches end in a 5, far exceeding the expected 10%).
 Think about it logically: if a rogue HLTV data entry clerk was manually faking scores over several years, why would they *only* target Jame (a passive, save-heavy AWPer), NiKo (an aggressive rifler), and donk (a hyper-aggressive entry fragger)—three players with completely contrasting playstyles? And why would they uniformly alter their trailing digits to a '5'? It makes zero sense.
@@ -33,9 +35,17 @@ To detect this level of deep tampering, we plotted the Kernel Density Estimation
 
 **The Results**:
 We closely analyzed the KDE curves of the 5 most debated players (ZywOo, NiKo, donk, m0NESY, Jame).
+
+![Key Players KDE Comparison](output/kde_zywoo_vs_key_players.png)
+
 *   **Silky Smooth**: Every single player's curve was naturally undulating and bimodal. **There were zero traces of artificial cliffs or hard cutoffs.**
 *   **The Visualization of Dominance**: ZywOo and donk's curves are shifted massively to the right. This isn't artificial boosting; it simply illustrates that their sheer skill level produces an incredibly wide and consistent distribution of high-tier performances.
 *   **Cross-Verification**: Jame's curve features a massive, smooth hump right around 1.15. This perfectly cross-verifies the findings from Test 1: his highly regimented, save-heavy playstyle repeatedly triggers a specific mathematical anchor in the HLTV formula, churning out a disproportionate volume of identical scores.
+
+**Full 20-Player Roster Scan**:
+Below is the KDE and histogram analysis for all 20 players in our dataset. None exhibit any statistically impossible hard cutoffs.
+
+![All 20 Players KDE Overview](output/kde_cliffs_all.png)
 
 ---
 
